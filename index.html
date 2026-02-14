@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <audio id="bg-music" loop autoplay>
+        <!-- Replace with a romantic mp3 URL -->
+        <source src="bgsong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="no-sound">
+        <source src="no.wav" type="audio/wav">
+    </audio>
+
+    <audio id="yes-sound">
+        <source src="yes.wav" type="audio/wav">
+    </audio>
+
+    <button id="music-toggle" class="music-btn">🎵</button>
+
+    <!-- Tap to Open Overlay -->
+    <div id="start-screen" class="screen start-screen">
+        <div class="container">
+            <h1>You have a special message... 💌</h1>
+            <p>(Tap anywhere to open)</p>
+        </div>
+    </div>
+
+    <!-- Page 1: Proposal Screen -->
+    <div id="proposal-screen" class="screen">
+        <div class="container">
+            <div class="gif-container">
+                <!-- Replace with a romantic GIF -->
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3R6eW55b3R6eW55b3R6eW55b3R6eW55b3R6eW55b3R6eW55/LpDmM2wSt6Hm5fKJVa/giphy.gif"
+                    alt="Cute Proposal GIF" class="romantic-gif">
+            </div>
+
+            <h1 class="question">Will you be my Valentine?</h1>
+
+            <div class="buttons">
+                <button id="yes-btn" class="btn yes-btn">YES ❤️</button>
+                <button id="no-btn" class="btn no-btn">NO 💔</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Love Reveal Screen -->
+    <div id="love-reveal-screen" class="screen hidden">
+        <div class="background-animation">
+            <!-- Floating hearts will be added here by JS/CSS -->
+        </div>
+
+        <div class="container">
+            <div class="photo-frame">
+                <!-- Replace with your couple photo -->
+                <img src="couple2.jpeg" alt="Couple Photo" class="couple-photo" id="couple-photo">
+            </div>
+
+            <div class="shayari-container">
+                <p id="shayari-text"></p> <!-- Typewriter text goes here -->
+            </div>
+
+            <p class="final-message">Yay! I knew you'd say yes! 💖</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
