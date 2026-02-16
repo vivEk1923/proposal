@@ -258,3 +258,47 @@ body {
         opacity: 0;
     }
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .question {
+        font-size: 1.5em;
+        /* Smaller question text */
+    }
+
+    .romantic-gif {
+        width: 150px;
+        /* Smaller GIF */
+    }
+
+    .photo-frame {
+        width: 200px;
+        /* Smaller photo frame */
+        height: 200px;
+    }
+
+    .shayari-container {
+        font-size: 1.4em;
+        /* Readable but smaller shayari */
+    }
+
+    .buttons {
+        gap: 10px;
+        /* Smaller gap between buttons */
+    }
+
+    .btn {
+        padding: 10px 20px;
+        /* Smaller buttons */
+        font-size: 1em;
+    }
+
+    .start-screen h1 {
+        font-size: 1.8em;
+        /* Smaller start screen text */
+    }
+}
