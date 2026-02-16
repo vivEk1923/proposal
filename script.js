@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function playMusic() {
         bgMusic.play().then(() => {
             isPlaying = true;
-            musicBtn.textContent = '🔇';
+            musicBtn.textContent = '🎵'; // Playing: Show Note
         }).catch(e => {
             console.log("Audio play failed (waiting for interaction):", e);
             isPlaying = false;
-            musicBtn.textContent = '🎵';
+            musicBtn.textContent = '🔇'; // Blocked/Paused: Show Mute
         });
     }
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     musicBtn.addEventListener('click', () => {
         if (isPlaying) {
             bgMusic.pause();
-            musicBtn.textContent = '🎵';
+            musicBtn.textContent = '🔇'; // Paused: Show Mute
             isPlaying = false;
         } else {
             playMusic();
